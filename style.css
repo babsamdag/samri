@@ -126,6 +126,7 @@ nav .mainMenu .closeMenu,
   max-width: 100%;
   flex-basis: 40%;
   padding: 0 15%;
+  border-radius: 50%;
 }
 
 .name {
@@ -221,7 +222,7 @@ nav .mainMenu .closeMenu,
   .image {
     max-width: 30%;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 35px;
   }
 
   .name {
