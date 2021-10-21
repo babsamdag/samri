@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #164f53;
+}
+/*body {
+  background: linear-gradient(-45deg, #740520,#cbe947);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  scroll-behavior: smooth;
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* .......navabar ......*/
+nav {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+  float: right;
+}
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Slabo 27px", serif;
+  font-weight: bold;
+}
+nav .mainMenu li a:hover {
+  background: rgb(255, 94, 0);
+  border-radius: 70%;
+}
+nav a:visited {
+  color: black;
+}
+
+/*social media links  as logo*/
+.sociallogo ul {
+  display: flex;
+}
+.sociallogo li {
+  display: flex;
+  justify-content: space-between;
+}
+.fab li {
+  list-style: none;
+  margin: 10px 10px;
+}
+.sociallogo ul li .fab {
+  font-size: 30px;
+  line-height: 60px;
+  transition: 6s;
+  color: #000;
+  text-align: center;
+  display: inline-block;
+}
+
+.sociallogo ul li a {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  text-align: center;
+  transition: 2s;
+  border-radius: 50%;
+  padding: 0 40%;
+}
+.sociallogo ul li a:hover {
+  transform: translate(0, -10px);
+}
+.first a:hover {
+  background-color: #1877f2;
+}
+.second a:hover {
+  background-color: #1877f2;
+}
+
+/*... for  humberger menu..*/
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+.fa-facebook:hover {
+  color: rgb(0, 110, 255);
+}
+.fa-linkedin:hover {
+  color: rgb(86, 154, 243);
+}
+.fa-instagram:hover {
+  color: rgb(255, 0, 191);
+}
+
+/*.....container......*/
+.container {
+  display: flex;
+  align-items: center;
+}
+.image {
+  max-width: 100%;
+  flex-basis: 40%;
+  padding: 0 15%;
+}
+
+.name {
+  font-family: "Koh Santepheap", cursive;
+  font-weight: bolder;
+  font-family: "Slabo 27px", serif;
+  font-style: normal;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 1.8;
+}
+.name h1 {
+  font-size: 36;
+  position: relative;
+  -webkit-text-stroke: 0.1vw #8ff9b0;
+  border-right: 10px solid yellow;
+  overflow: hidden;
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  50%,
+  70% {
+    width: 70%;
+  }
+}
+
+.name h3 {
+  font-size: 26;
+  line-height: 1;
+  position: relative;
+  -webkit-text-stroke: 0.1vw #8ff9b0;
+  border-right: 10px solid yellow;
+  overflow: hidden;
+  animation: title 10s linear infinite;
+}
+@keyframes title {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  50%,
+  70% {
+    width: 70%;
+  }
+}
+
+/* Responsive for humberger bar------------------------------------*/
+@media screen and (max-width: 600px) {
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    transition: top 1s ease;
+    display: none;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .openMenu {
+    display: block;
+  }
+  nav .mainMenu li a:hover {
+    background: none;
+    color: rgb(255, 123, 0);
+    font-size: 1.6rem;
+  }
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+  /*....container...*/
+
+  .container {
+    display: inline;
+  }
+  .image {
+    max-width: 30%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .name {
+    font-family: "Koh Santepheap", cursive;
+    font-weight: bolder;
+    font-family: "Slabo 27px", serif;
+    font-style: normal;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 1.8;
+    padding-top: 10%;
+  }
+  .name h1 {
+    font-size: 36;
+    position: relative;
+    -webkit-text-stroke: 0.1vw black;
+    border-right: 10px solid yellow;
+    overflow: hidden;
+    animation: animate 10s linear infinite;
+  }
+
+  @keyframes animate {
+    0%,
+    10%,
+    100% {
+      width: 0;
+    }
+    50%,
+    70% {
+      width: 70%;
+    }
+  }
+
+  .name h3 {
+    font-size: 26;
+    line-height: 1;
+    position: relative;
+    -webkit-text-stroke: 0.1vw black;
+    border-right: 10px solid yellow;
+    overflow: hidden;
+    animation: title 10s linear infinite;
+  }
+  @keyframes title {
+    0%,
+    10%,
+    100% {
+      width: 0;
+    }
+    50%,
+    70% {
+      width: 70%;
+    }
+  }
+}

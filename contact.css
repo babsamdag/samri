@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #16cfd6;
+}
+/* .......navabar ......*/
+nav {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+}
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "Slabo 27px", serif;
+  font-weight: bold;
+}
+nav .mainMenu li a:hover {
+  background: rgb(255, 94, 0);
+  border-radius: 70%;
+}
+nav a:visited {
+  color: black;
+}
+
+          /*social media links  as logo*/
+.sociallogo ul {
+  display: flex;
+}
+.sociallogo li {
+  display: flex;
+  justify-content: space-between;
+}
+.fab li {
+  list-style: none;
+  margin: 10px 10px;
+}
+.sociallogo ul li .fab {
+  font-size: 30px;
+  line-height: 60px;
+  transition: 6s;
+  color: #000;
+  text-align: center;
+  display: inline-block;
+}
+
+.sociallogo ul li a {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  text-align: center;
+  transition: 2s;
+  border-radius: 50%;
+  border-radius: 50%;
+  padding: 0 40%;
+}
+
+.sociallogo ul li a:hover {
+  transform: translate(0, -10px);
+}
+.first a:hover {
+  background-color: #1877f2;
+}
+.second a:hover {
+  background-color: #1877f2;
+}
+
+/*... for  humberger menu..*/
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+.fa-facebook:hover {
+  color: rgb(0, 110, 255);
+}
+.fa-linkedin:hover {
+  color: rgb(86, 154, 243);
+}
+.fa-instagram:hover {
+  color: rgb(255, 0, 191);
+}
+
+.contract {
+  margin: -10;
+}
+.contract h2 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 30;
+}
+.container {
+  padding-left: 300px;
+  max-width: 800px;
+  padding-bottom: 50px;
+  margin: -3;
+}
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 7px 0;
+  box-sizing: border-box;
+}
+label {
+  padding: 12px;
+  display: inline-block;
+}
+input,
+button {
+  background-color: white;
+  border: black;
+  padding: 16px 2px;
+  cursor: pointer;
+}
+button,
+submit :hover {
+  background-color: olivedrab;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+/* Responsive------------------------------------*/
+@media screen and (max-width: 600px) {
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    transition: top 1s ease;
+    display: none;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .openMenu {
+    display: block;
+  }
+  nav .mainMenu li a:hover {
+    background: rgb(255, 94, 0);
+    border-radius: 70%;
+  }
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+  .container {
+    padding-left: 40px;
+    max-width: 350px;
+    padding-bottom: 50px;
+    margin: -3;
+
+}
+}

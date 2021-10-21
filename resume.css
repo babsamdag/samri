@@ -1,0 +1,324 @@
+html {
+  box-sizing: border-box;
+  margin: -3;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  background-color: rgba(40, 138, 128, 1);
+}
+/* .......navabar ......*/
+nav {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+}
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "Slabo 27px", serif;
+  font-weight: bold;
+}
+nav .mainMenu li a:hover {
+  background: rgb(255, 94, 0);
+  border-radius: 70%;
+  
+}
+nav a:visited {
+  color: black;
+}
+
+/*social media links  as logo*/
+.sociallogo ul {
+  display: flex;
+}
+.sociallogo li {
+  display: flex;
+  justify-content: space-between;
+}
+.fab li {
+  list-style: none;
+  margin: 10px 10px;
+}
+.sociallogo ul li .fab {
+  font-size: 30px;
+  line-height: 60px;
+  transition: 6s;
+  color: #000;
+  text-align: center;
+  display: inline-block;
+}
+
+.sociallogo ul li a {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  text-align: center;
+  transition: 2s;
+  border-radius: 50%;
+  padding: 0 40%;
+}
+
+.sociallogo ul li a:hover {
+  transform: translate(0, -10px);
+}
+
+.first a:hover {
+  background-color: #1877f2;
+}
+.second a:hover {
+  background-color: #1877f2;
+}
+
+/*... for  humberger menu..*/
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+.fa-facebook:hover {
+  color: rgb(0, 110, 255);
+}
+.fa-linkedin:hover {
+  color: rgb(86, 154, 243);
+}
+.fa-instagram:hover {
+  color: rgb(255, 0, 191);
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 3;
+  text-align: center;
+}
+h2 {
+  font-size: 20px;
+  text-align: center;
+}
+h1,
+h2 {
+  font-family: "Caveat", cursive;
+  font-weight: 200;
+  margin: 0;
+}
+.profile {
+  background: #2f3061;
+  color: #f7fff7;
+}
+.content-wraper {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+  text-align: justify;
+}
+.work-Exprince {
+  background-color: #b0e0e6;
+  margin-top: -2;
+}
+.Exp {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 30px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  padding-left: 60px;
+  column-gap: 20px;
+}
+.Education {
+  background-color: #e0ffff;
+  padding: 20 60 30 100;
+  margin: -2;
+  color: black;
+}
+.Education h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 30;
+  margin: -2;
+}
+.edu {
+  padding-left: 0 100px;
+  line-height: 1.8;
+}
+.edu ul {
+  list-style-type: none;
+}
+
+.certificate h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 30;
+}
+
+.certificate {
+  padding-top: 20;
+  padding-bottom: 30;
+  margin: 0;
+  color: black;
+}
+.item {
+  padding-left: 100;
+}
+/*.... footer....*/
+.address {
+  background-color: #5f9ea0;
+}
+.address h2 {
+  text-align: center;
+  padding: 20 px;
+  margin: -2;
+}
+
+.address li {
+  list-style: none;
+  margin: 10px 10px;
+  display: inline-block;
+  justify-content: space-evenly;
+  padding-left: 150;
+}
+.address ul li .fab {
+  font-size: 30px;
+  line-height: 60px;
+  transition: 6s;
+  color: #000;
+  text-align: center;
+}
+.address ul li .fas {
+  font-size: 30px;
+  line-height: 60px;
+  transition: 6s;
+  color: #000;
+  text-align: center;
+}
+
+.address ul li a {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  text-align: center;
+  transition: 2s;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+.address ul li a:hover {
+  transform: translate(0, -10px); /*mottion*/
+}
+.address ul li .fas:hover {
+  color: #fff;
+}
+.address ul li .fab:hover {
+  color: #fff;
+}
+.first a:hover {
+  background-color: #1877f2;
+}
+.second a:hover {
+  background-color: #1877f2;
+}
+.third a:hover {
+  background-color: #da552f;
+}
+/* Responsive------------------------------------*/
+@media screen and (max-width: 600px) {
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    transition: top 1s ease;
+    display: none;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .openMenu {
+    display: block;
+  }
+  nav .mainMenu li a:hover {
+    background: none;
+    color: rgb(255, 123, 0);
+    font-size: 1.6rem;
+  }
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+  /*......body part.....*/
+  .name h1 {
+    font-size: 30px;
+    line-height: 1;
+    text-align: center;
+    font-weight: 100;
+    padding: 20px 0 20px 0;
+  }
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30;
+  }
+  .content-wraper {
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: justify;
+  }
+  .Education {
+    padding: 10 10;
+    margin: -2;
+  }
+  .edu {
+    padding-left: 0 20px;
+    line-height: 1.8;
+  }
+
+  .item {
+    padding-left: 0 50;
+  }
+  .address li {
+    list-style: none;
+    display: inline-block;
+    justify-content: space-evenly;
+    padding-left: 10;
+  }
+}

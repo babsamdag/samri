@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color:#22441e;
+}
+/* .......navabar ......*/
+nav {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+  float: right;
+}
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "Slabo 27px", serif;
+  font-weight: bold;
+}
+nav .mainMenu li a:hover {
+  background: rgb(255, 94, 0);
+  border-radius: 70%;
+}
+nav a:visited {
+  color: black;
+}
+
+/*social media links  as logo*/
+.sociallogo ul {
+  display: flex;
+}
+.sociallogo li {
+  display: flex;
+  justify-content: space-between;
+}
+.fab li {
+  list-style: none;
+  margin: 10px 10px;
+}
+.sociallogo ul li .fab {
+  font-size: 30px;
+  line-height: 60px;
+  transition: 6s;
+  color: #000;
+  text-align: center;
+  display: inline-block;
+}
+
+.sociallogo ul li a {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  text-align: center;
+  transition: 2s;
+  border-radius: 50%;
+  padding: 0 40%;
+}
+.sociallogo ul li a:hover {
+  transform: translate(0, -10px);
+}
+.first a:hover {
+  background-color: #1877f2;
+}
+.second a:hover {
+  background-color: #1877f2;
+}
+
+/*... for  humberger menu..*/
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+.fa-facebook:hover {
+  color: rgb(0, 110, 255);
+}
+.fa-linkedin:hover {
+  color: rgb(86, 154, 243);
+}
+.fa-instagram:hover {
+  color: rgb(255, 0, 191);
+}
+/*.....container......*/
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 5%;
+}
+
+.description {
+  font-family: "Koh Santepheap", cursive;
+  font-size: 16;
+  line-height: 1.5;
+  display: grid;
+  grid-column: auto;
+  color: #22441e;
+  padding: 0 40;
+  justify-content: space-evenly;
+  width: 45%;
+  border-style: solid;
+  border-color:#f7f083;
+  border-radius: 50px 100px 100px 50px;
+  background-color: #f7f083  ;
+}
+.description p {
+  padding-top: 30px;
+  text-align: justify;
+}
+/*....social  links for reference....*/
+.social a {
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "Koh Santepheap", cursive;
+  position: absolute;
+
+  color: rgb(65, 65, 212);
+  padding-top: 10;
+}
+
+/*.social ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  margin: 0;
+  transform: translate(-50%, -40%);
+}*/
+
+li {
+  list-style: none;
+  margin: 10px 10px;
+  display: inline-block;
+}
+.social ul li .fab {
+  font-size: 30px;
+  line-height: 60px;
+  transition: 6s;
+  color: #000;
+  text-align: center;
+}
+
+.social ul li a {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  text-align: center;
+  transition: 2s;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 25%;
+}
+.social ul li a:hover {
+  transform: translate(0, -10px); /*mottion*/
+}
+.social ul li .fas:hover {
+  color: #fff;
+}
+.social ul li .fab:hover {
+  color: #fff;
+}
+
+.fourth a:hover {
+  background-color: #cd201f;
+}
+.fifth a:hover {
+  background-color: #fff;
+}
+.sixth a:hover {
+  background-color: #f57d00;
+}
+/* Responsive for humberger------------------------------------*/
+@media screen and (max-width: 600px) {
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    transition: top 1s ease;
+    display: none;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .openMenu {
+    display: block;
+  }
+  nav .mainMenu li a:hover {
+    background: none;
+    color: rgb(255, 123, 0);
+    font-size: 1.6rem;
+  }
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+  /*.....container......*/
+  body{
+    background-image: url('back1.png');
+    background-position:  90% 15%;
+    background-repeat: no-repeat;
+  }
+  .container {
+    display: inline;
+  }
+  .description {
+    padding-top: 30;
+    display: inline;
+    text-align: center;
+    color:#f7f083 ;
+  }
+  img{
+    display: none;
+  }
+
+  p {
+    text-align: center;
+    padding: 15px 20px 0 20px;
+  }
+}
